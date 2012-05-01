@@ -20,6 +20,6 @@ The gem relies on the CodeGen.dll. If you have Software Passport installed, you 
 The armadilo gem will attempt to find the CodeGen.dll by finding the install path of SoftwarePassport (specified by 'Directory' in registry key 'HKLM\Software\SoftwarePassport')
 
 The path to CodeGen.dll can be overridden:
-
     
-The rake task `rake armadillo:init` will locate and make a copy of the DLL to the local folder.
+    CodeGen::dll_path = File.join('C:', 'Program Files', 'SoftwarePassport', 'CodeGen', 'CodeGen.dll')
+
