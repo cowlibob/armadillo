@@ -1,4 +1,4 @@
-ruby_armadillo
+Armadillo Gem
 ==============
 
 Ruby wrapper for Digital River&#39;s Armadillo Theft Prevention Engine
@@ -17,4 +17,9 @@ Usage
 
 The gem relies on the CodeGen.dll. If you have Software Passport installed, you will find the DLL in %ProgramFiles(x86)%\SoftwarePassport\CodeGen\CodeGen.dll
 
+The armadilo gem will attempt to find the CodeGen.dll by finding the install path of SoftwarePassport (specified by 'Directory' in registry key 'HKLM\Software\SoftwarePassport')
+
+The path to CodeGen.dll can be overridden:
+
+    
 The rake task `rake armadillo:init` will locate and make a copy of the DLL to the local folder.
